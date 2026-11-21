@@ -107,8 +107,10 @@ export default function SecretCapsule() {
             {letter.greeting}
           </h3>
           <div className="letter mt-6">
-            {letter.paragraphs.map((p) => (
-              <p key={p}>{p}</p>
+            {[...letter.paragraphs, letter.memory, ...letter.paragraphsAfter].map((p, i) => (
+              <p key={p} className="anim-rise" style={{ animationDelay: `${0.5 + i * 0.7}s` }}>
+                {p}
+              </p>
             ))}
           </div>
           <hr className="hairline my-8" />
@@ -119,6 +121,11 @@ export default function SecretCapsule() {
           </div>
           <p className="mt-10 text-sm text-ink-soft">{letter.signoff}</p>
           <p className="mt-1 font-hand text-4xl text-terracotta-deep">{letter.signature}</p>
+          <div className="mt-8 space-y-1 font-hand text-2xl text-ink-soft">
+            {letter.ps.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
         </article>
       )}
     </section>

@@ -6,7 +6,15 @@ import { ArrowDownIcon, SprigIcon } from "@/components/icons/Icons";
 
 export default function JournalOpening({ children }: { children: ReactNode }) {
   const [opened, setOpened] = useState(false);
+  const [timeLine, setTimeLine] = useState("");
   const headingRef = useRef<HTMLHeadingElement>(null);
+
+  const handleOpen = () => {
+    const h = new Date().getHours();
+    const t = opening.timeLines;
+    setTimeLine(h < 4 ? t.lateNight : h < 11 ? t.morning : h < 15 ? t.noon : h < 18 ? t.evening : h < 24 ? t.night : t.lateNight);
+    setOpened(true);
+  };
 
   useEffect(() => {
     if (!opened) return;
@@ -25,7 +33,7 @@ export default function JournalOpening({ children }: { children: ReactNode }) {
             {opening.coverSubtitle}
           </p>
           <hr className="hairline my-10 w-16" />
-          <button type="button" className="btn-ink" onClick={() => setOpened(true)}>
+          <button type="button" className="btn-ink" onClick={handleOpen}>
             {opening.buttonLabel}
           </button>
         </div>
@@ -47,6 +55,7 @@ export default function JournalOpening({ children }: { children: ReactNode }) {
         >
           {opening.greetingTitle}
         </h1>
+        <p className="display-italic mt-3 text-[1.5rem] leading-snug text-ink-soft">{timeLine}</p>
         <div className="mt-8 space-y-5">
           {opening.greeting.map((paragraph) => (
             <p key={paragraph} className="prose-soft">

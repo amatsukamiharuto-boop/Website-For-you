@@ -74,6 +74,32 @@ export const SprigIcon = (p: IconProps) => (
   </Base>
 );
 
+export const DropIcon = (p: IconProps) => (
+  <Base {...p}>
+    <path d="M12 3.5c3.5 4.5 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 2.5-6.5 6-11z" />
+  </Base>
+);
+
+export const MoonIcon = (p: IconProps) => (
+  <Base {...p}>
+    <path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z" />
+  </Base>
+);
+
+export const PathIcon = (p: IconProps) => (
+  <Base {...p}>
+    <path d="M6 21c0-5 12-4 12-9S9 9 9 5c0-1 .5-1.8 1.5-2" />
+    <path d="M14 21h5" />
+  </Base>
+);
+
+export const SunIcon = (p: IconProps) => (
+  <Base {...p}>
+    <circle cx="12" cy="12" r="3.5" />
+    <path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4" />
+  </Base>
+);
+
 /** Toples kaca dengan beberapa lipatan kertas di dalam. */
 export function JarIllustration({ className }: { className?: string }) {
   return (
@@ -109,6 +135,10 @@ const CARD_ICONS = {
   cloud: CloudIcon,
   mirror: MirrorIcon,
   pin: PinIcon,
+  drop: DropIcon,
+  moon: MoonIcon,
+  path: PathIcon,
+  sun: SunIcon,
 } as const;
 
 export function CardIcon({ name, ...rest }: { name: CardIconName } & IconProps) {
