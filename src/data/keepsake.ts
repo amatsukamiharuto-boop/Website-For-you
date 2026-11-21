@@ -258,8 +258,23 @@ export const capsule = {
       "Aku nggak tau persisnya apa yang lagi kamu hadapin, dan aku nggak akan maksa kamu cerita. Aku cuma pengin kamu tau kamu nggak sendirian ngadepinnya, ada aku yang akan selalu menemani kamu kapanpun dan siap mendengarkan curhatan kamu",
       "Kamu nggak lemah, kamu itu kuat aku sampai kagum sama kamu, aku tau kamu punya sebuah rasa sakit, tapi jangan di pendam terlalu lama ya, kalau mau cerita cerita aja nggak papa kok, aku selalu siap mendengarkan kamu. Tetaplah semangat dan teruslah tersenyum karena senyumanmu itu membuat kamu sangat imut.",
     ],
+    /** Isi perasaanku. */
+    feelings: [
+      "Jujur, perasaanku ke kamu bukan perasaan yang muncul tiba-tiba. Dia tumbuh pelan-pelan, dari senyummu, dari caramu ketawa, dari hal-hal kecil yang mungkin kamu sendiri nggak sadar.",
+      "Aku suka sama kamu, dan aku mencintaimu, Dea. Aku bilang ini bukan buat minta jawaban dari perasaan kamu, tapi karena aku nggak mau nyimpen terus perasaan aku ke kamu, dan kamu berhak tau kalau ada orang yang tulus mencintaimu.",
+      "Aku mencintaimu tidak memandang status dan derajat kamu, aku mencintaimu dengan sangat tulus, aku ingin melindungi kamu, dan buat kamu bahagia selamanya",
+      "Kalau perasaanmu nggak sama, nggak apa-apa. Beneran nggak apa-apa kok. Aku nggak akan berubah, dan pertemanan kita tetap hal yang paling aku jaga.",
+    ],
+    /** Terima kasihku. */
+    thanks: [
+      "Terima kasih udah jadi orang yang bikin aku menyukai serta mencintai kamu.",
+      "Terima kasih udah mau ngobrol sama aku, dengerin aku, dan nerima aku apa adanya sebagai teman. Itu sangat berarti banget buat aku.",
+      "Terima kasih karena udah mau menjadi teman sekaligus sahabatku Dea, aku mencintaimu, sangat sangat mencintaimu❤️❤️❤️",
+      "Terima kasih juga udah mau baca surat ini sampai habis. Apa pun yang kamu rasain, aku bakal terima dengan ihklas dan lapang dada.",
+      "Aku akan selalu mencintaimu Dea, I love you Dea Forever❤️",
+    ],
     closing: [
-      "Apa pun yang kamu rasain setelah baca ini, kamu boleh mengeskpresikannya, aku nggak minta kamu buat balas perasaanku, cukup kamu tau dan melihat isi perasaan aku itu sudah cukup dan melihatmu tersenyum itu juga udah cukup buat aku. Kita tetap seperti biasa, berteman dll, dan pintu ngobrol di sini tetap terbuka kapan pun kamu mau, aku akan selalu dan siap mendengarkan kamu Dea.",
+      "Apa pun yang kamu rasain setelah baca ini, kamu boleh mengeskpresikannya, aku nggak minta kamu buat balas perasaanku, cukup kamu tau dan melihat isi perasaan aku itu sudah cukup dan melihatmu tersenyum itu juga udah cukup buat aku. Kita tetap seperti biasa, berteman dll, dan pintu ngobrol di sini tetap terbuka kapan pun kamu mau, aku akan selalu ada dan siap mendengarkan kamu Dea.",
       "Pelan-pelan aja. Nggak ada yang buru-buru di sini.",
     ],
     signoff: "Dari temanmu,",
