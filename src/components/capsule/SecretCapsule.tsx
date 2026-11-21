@@ -107,7 +107,7 @@ export default function SecretCapsule() {
             {letter.greeting}
           </h3>
           <div className="letter mt-6">
-            {[...letter.paragraphs, letter.memory, ...letter.paragraphsAfter].map((p, i) => (
+            {[...letter.paragraphs, letter.memory, ...letter.paragraphsAfter, ...letter.feelings, ...letter.thanks].map((p, i) => (
               <p key={p} className="anim-rise" style={{ animationDelay: `${0.5 + i * 0.7}s` }}>
                 {p}
               </p>
