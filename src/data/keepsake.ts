@@ -33,11 +33,11 @@ export interface OpenWhenCard {
 /* ---------- Identitas ---------- */
 
 export const recipient = {
-  name: "Ayu", // GANTI: nama panggilan dia
+  name: "Dea", // GANTI: nama panggilan dia
 } as const;
 
 export const sender = {
-  name: "Temanmu", // GANTI: namamu atau panggilan yang biasa dia pakai
+  name: "Aqso teman sekaligus sahabat kamu", // GANTI: namamu atau panggilan yang biasa dia pakai
 } as const;
 
 /* ---------- 1. Pembuka ---------- */
@@ -224,7 +224,7 @@ export const capsule = {
   intro:
     "Bukan rahasia yang serem, kok. Cuma surat pendek yang baru bisa dibuka kalau kamu ingat kata kuncinya.",
   /** GANTI: petunjuk yang cuma kalian berdua yang ngerti. */
-  clue: "Petunjuknya: minuman yang hampir selalu kamu pesan tiap kali kita nongkrong.",
+  clue: "Petunjuknya: orang yang setiap hari selalu mikirin kesehatan kamu, selalu siap menemani kamu, dan sentiasa mengobrol dengan kamu.",
   inputLabel: "Kata kunci",
   inputPlaceholder: "ketik di sini",
   submitLabel: "Buka Kapsul",
@@ -232,7 +232,7 @@ export const capsule = {
    * GANTI: daftar jawaban yang diterima (tidak peduli huruf besar/kecil
    * dan spasi berlebih). Boleh lebih dari satu variasi.
    */
-  accepted: ["kopi susu", "es kopi susu"],
+  accepted: ["sahabatku Aqso", "Aqso", "aqso"],
   emptyMessage: "Ketik dulu kata kuncinya, ya.",
   wrongMessages: [
     "Belum pas, coba ingat-ingat lagi pelan-pelan.",
@@ -243,9 +243,9 @@ export const capsule = {
   letter: {
     greeting: `Hai, ${recipient.name}.`,
     paragraphs: [
-      "Surat ini nggak minta apa-apa dari kamu. Nggak perlu dibalas, nggak perlu dibahas, nggak perlu dipikirin berlebihan. Aku cuma pengin ngomong beberapa hal yang selama ini kesimpen di kepala.",
+      "Surat ini nggak minta apa-apa dari kamu. Nggak perlu dibalas, nggak perlu dipikirin berlebihan. Aku cuma pengin ngomong beberapa hal yang selama ini kesimpen di kepala dan dihatiku.",
       "Aku kagum sama kamu. Bukan yang gimana-gimana, tapi dari hal-hal kecil: cara kamu dengerin orang sampai selesai, cara kamu tetap baik walaupun lagi capek, dan cara kamu ketawa yang bikin suasana ikut ringan.",
-      "Ada hari-hari waktu kepalaku lagi berantakan, terus ngobrol sebentar sama kamu, dan tiba-tiba semuanya terasa lebih enteng. Kamu mungkin nggak sadar udah ngelakuin itu, soalnya kamu ngelakuinnya tanpa usaha.",
+      "Ada hari-hari waktu kepalaku lagi berantakan, terus ngobrol sebentar sama kamu, dan tiba-tiba semuanya terasa lebih ringan. Terima kasih ya Dea , Aku menyayangi kamu.",
     ],
     /**
      * GANTI: satu kejadian nyata antara kalian, sekecil apa pun.
@@ -253,13 +253,13 @@ export const capsule = {
      * kamu ceritain ke orang lain.
      */
     memory:
-      "Aku masih inget waktu kamu ketawa sampai nggak bisa ngomong gara-gara hal sepele. Aku bahkan nggak inget lucunya apa, tapi aku inget ketawanya, dan sejak itu aku jadi suka bikin kamu ketawa.",
+      "Aku masih inget waktu kamu ketawa dulu di sekolah saat ada acara, dan kita waktu itu saling tatapan dan kamu imut banget . Mungkin kamu sudah lupa , tapi aku masih inget kenangan waktu itu, dan sejak itu aku mulai jatuh cinta kepada kamu.",
     paragraphsAfter: [
-      "Aku nggak tau persisnya apa yang lagi kamu hadapin, dan aku nggak akan maksa kamu cerita. Aku cuma pengin kamu tau kamu nggak sendirian ngadepinnya.",
-      "Makasih udah jadi orang yang kayak gitu. Itu aja sebenarnya.",
+      "Aku nggak tau persisnya apa yang lagi kamu hadapin, dan aku nggak akan maksa kamu cerita. Aku cuma pengin kamu tau kamu nggak sendirian ngadepinnya, ada aku yang akan selalu menemani kamu kapanpun dan siap mendengarkan curhatan kamu",
+      "Kamu nggak lemah, kamu itu kuat aku sampai kagum sama kamu, aku tau kamu punya sebuah rasa sakit, tapi jangan di pendam terlalu lama ya, kalau mau cerita cerita aja nggak papa kok, aku selalu siap mendengarkan kamu. Tetaplah semangat dan teruslah tersenyum karena senyumanmu itu membuat kamu sangat imut.",
     ],
     closing: [
-      "Apa pun yang kamu rasain setelah baca ini, semuanya boleh. Kita tetap kayak biasa, dan pintu ngobrol di sini tetap terbuka kapan pun kamu mau, tanpa harus ada jawaban apa-apa.",
+      "Apa pun yang kamu rasain setelah baca ini, kamu boleh mengeskpresikannya, aku nggak minta kamu buat balas perasaanku, cukup kamu tau dan melihat isi perasaan aku itu sudah cukup dan melihatmu tersenyum itu juga udah cukup buat aku. Kita tetap seperti biasa, berteman dll, dan pintu ngobrol di sini tetap terbuka kapan pun kamu mau, aku akan selalu dan siap mendengarkan kamu Dea.",
       "Pelan-pelan aja. Nggak ada yang buru-buru di sini.",
     ],
     signoff: "Dari temanmu,",
